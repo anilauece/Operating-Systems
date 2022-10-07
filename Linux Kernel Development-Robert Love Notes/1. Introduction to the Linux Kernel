@@ -5,9 +5,9 @@ History of unix:
 Unix is straight forward and Basic design.
 Only 100's of system-calls(not 1000's of system calls)
 unix source accessible to many developers.
-Everything is a file
+Everything is a file(except Sockets).
 -> Changing data and device using same API's
--> (open, close, read, write, lseek)
+-> (open(), close(), read(), write(), lseek())
 Unix is written in C. So, portability is good across different h/w architectures.
 Unix has fast process creation time
 -> unique fork() syscall
