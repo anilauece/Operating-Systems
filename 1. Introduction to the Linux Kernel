@@ -1,0 +1,28 @@
+
+							1 Introduction to the linux kernel
+History of unix:
+Unix is straight forward and Basic design.
+Only 100's of system-calls(not 1000's of system calls)
+unix source accessible to many developers.
+Everything is a file
+-> Changing data and device using same API's
+-> (open, close, read, write, lseek)
+Unix is written in C. So, portability is good across different h/w architectures.
+Unix has fast process creation time
+-> unique fork() syscall
+Unix has robust IPC(interprocess communication)
+
+Unix has single purpose programs. Multiple single purpose programs together can achieve 
+complex tasks.
+Unix has clean layering.
+
+Features:
+csh, vi, Virtual Memory(VM), Job control, Demand Paging, TCP/IP
+
+Modern unix:
+1. Preemptive multitasking
+2. Multithreading
+3. Virtual memory
+4. Demand paging
+5. Shared libs with demand loading
+6. TCP/IP networking
