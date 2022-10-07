@@ -2,23 +2,26 @@
 							1 Introduction to the linux kernel
 History of unix:
 ----------------
-Unix is straight forward and Basic design.
+1969: Bell lab programmers sketched out a file-system design that evolved iinto Unix.
+Unix design is simple, straight forward and basic design.
 Only 100's of system-calls(not 1000's of system calls)
-unix source accessible to many developers.
+unix is distributed with source code. source accessible to many developers.
 Everything is a file(except Sockets).
 -> Changing data and device using same API's
 -> (open(), close(), read(), write(), lseek())
 Unix is written in C. So, portability is good across different h/w architectures.
 Unix has fast process creation time
--> unique fork() syscall
+-> unique fork() system call
 Unix has robust IPC(interprocess communication)
 
 Unix has single purpose programs. Multiple single purpose programs together can achieve 
 complex tasks.
 Unix has clean layering.
-Unix is scalale to 100's of processors
-Unix can run on small, embedded devices.
+Unix variants scale to 100's of processors
+Unix variants can run on small, embedded devices.
 So, unix remain a practical and general purpose OS.
+
+BSD - Variant of Unix.
 
 Features:
 csh, vi, Virtual Memory(VM), Job control, Demand Paging, TCP/IP
@@ -35,4 +38,19 @@ Modern unix:
 Reason for unix success:
 ------------------------
 1. Simplicity, elegance of it's design.
-2. Good design decisions helped unix to evolve without compromising itself.
+2. Good inaugural design decisions during unix development helped unix to evolve itself without compromising.
+
+Introduction to Linux:
+----------------------
+Motivation for Linux Torvalds: Lack of powerful yet "FREE" Unix system.
+------------------------------
+Linus used Minix(Unix variant)
+He can't make changes to os code and distribute them. Reason: 
+1. Minix's licensing issues.
+2. Design decisions are only made by Minix author.
+
+First Linux Version - 1991 (OS for computers running with Intel 80386 microprocessor).
+- Linux quickly attracted many developers, adding, changing, improving code. Because of terms of it's license, Linux swiftly evolved into collaborative project
+developed by many.
+
+
