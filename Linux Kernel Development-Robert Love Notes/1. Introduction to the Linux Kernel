@@ -56,6 +56,7 @@ developed by many.
 Kernel - Software that provides basic services for all other parts of the system, manages hardware and distributes system resources.
 
 Components of Kernel:
+---------------------
 1. Interrupt handler: To service interrupt requests
 2. Scheduler to share processor time among multiple processes
 3. Memory management system to manager process address spaces
