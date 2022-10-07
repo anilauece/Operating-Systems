@@ -57,7 +57,23 @@ Kernel - Software that provides basic services for all other parts of the system
 
 Components of Kernel:
 ---------------------
-1. Interrupt handler: To service interrupt requests
-2. Scheduler to share processor time among multiple processes
-3. Memory management system to manager process address spaces
+1. Interrupt handler: To service interrupt requests.
+2. Scheduler to share processor time among multiple processes.
+3. Memory management system to manager process address spaces.
 4. System services: Networking, Interprocess communication(IPC) etc.
+
+Kernel (vs) Userspace apps:
+---------------------------
+1. Kernel resides in elevated system state compared to normal user apps.
+- Elevated system state: Protected Memory Space and full access to Hardware.
+2. elevated system state + memory space = kernel-space.
+3. User apps run in user-space.
+
+System modes: Kernel mode (vs) user mode
+-----------------------------------------
+1. When executing kernel code, system is in kernel-space executing in kernel mode.
+2. When running regular process, system is in user-space executing in user mode.
+
+system calls:
+-------------
+1. Apps comunicate with Kernel via system calls.
