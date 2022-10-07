@@ -1,6 +1,7 @@
 
 							1 Introduction to the linux kernel
 History of unix:
+----------------
 Unix is straight forward and Basic design.
 Only 100's of system-calls(not 1000's of system calls)
 unix source accessible to many developers.
@@ -15,14 +16,23 @@ Unix has robust IPC(interprocess communication)
 Unix has single purpose programs. Multiple single purpose programs together can achieve 
 complex tasks.
 Unix has clean layering.
+Unix is scalale to 100's of processors
+Unix can run on small, embedded devices.
+So, unix remain a practical and general purpose OS.
 
 Features:
 csh, vi, Virtual Memory(VM), Job control, Demand Paging, TCP/IP
 
 Modern unix:
+------------
 1. Preemptive multitasking
 2. Multithreading
 3. Virtual memory
 4. Demand paging
 5. Shared libs with demand loading
 6. TCP/IP networking
+
+Reason for unix success:
+------------------------
+1. Simplicity, elegance of it's design.
+2. Good design decisions helped unix to evolve without compromising itself.
