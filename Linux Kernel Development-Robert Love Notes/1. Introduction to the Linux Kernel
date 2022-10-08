@@ -52,6 +52,11 @@ He can't make changes to os code and distribute them. Reason:
 First Linux Version - 1991 (OS for computers running with Intel 80386 microprocessor).
 - Linux quickly attracted many developers, adding, changing, improving code. Because of terms of it's license, Linux swiftly evolved into "collaborative project"
 developed by many.
+Linux is a collaborative project.
+
+GNOME- full-featured desktop environment.
+
+Operating system: Part of the system responsible for basic use and administration.
 
 Kernel - Software that provides basic services for all other parts of the system, manages hardware and distributes system resources.
 
@@ -59,7 +64,7 @@ Components of Kernel:
 ---------------------
 1. Interrupt handler: To service interrupt requests.
 2. Scheduler to share processor time among multiple processes.
-3. Memory management system to manager process address spaces.
+3. Memory management system to manage process address spaces.
 4. System services: Networking, Interprocess communication(IPC) etc.
 
 Kernel (vs) Userspace apps:
@@ -76,4 +81,14 @@ System modes: Kernel mode (vs) user mode
 
 system calls:
 -------------
-1. Apps comunicate with Kernel via system calls.
+1. Apps communicate with Kernel via system calls.
+2. applications call into kernel via system call interface
+- this is the way applications get work done.
+
+Process context:
+-----------------
+When application executes a system call, we say that the kernel is executing on behalf of the application:
+- Means, application is said to be executing system call in kernel space, kernel is running in process context.
+
+<Figure 1.1>
+
