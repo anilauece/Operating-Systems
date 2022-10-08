@@ -58,7 +58,21 @@ GNOME- full-featured desktop environment.
 
 Operating system: Part of the system responsible for basic use and administration.
 
-Kernel - Software that provides basic services for all other parts of the system, manages hardware and distributes system resources.
+Kernel - Software that provides basic services for all other parts of the system, 
+- Manages system hardware and distributes system resources.
+
+Interrupt: 
+----------
+When hardware wants to communicate with the system, h/w issues interrupt, it interrupts the processor, which in turn interrupts the kernel.
+- There will be an interrupt number associated with the interrupt.
+-- Kernel uses this number to execute a specific "interrupt handler" to process and respond to interrupt.
+eg: Keyboard controller issues "interrupt" to let system know there is new data in keyboard buffer.
+- Kernel uses IRQ num to execute correct intr handler. intr handler processes the keyboard data, let keyboard controller know it is ready for more data.
+
+- To provide "synchronization", kernel can disable interrupts on specific interrupt number.
+- Interrupt handlers run in "Interrupt context" which is not associated with any process.
+- Purpose of Interrupt Context: interrupt handler quickly respond to an interrupt, and exit.
+
 
 Components of Kernel:
 ---------------------
@@ -91,4 +105,11 @@ When application executes a system call, we say that the kernel is executing on 
 - Means, application is said to be executing system call in kernel space, kernel is running in process context.
 
 <Figure 1.1>
+
+Processor is doing exactly "one of three things" at any given moment:
+1. In User-space,  executing user code in a process
+2. In kernel-space, in process context, executing on behalf of a specific process
+3. In kernel-space, in interrupt context, NOT associated with a process, handling an interrupt.
+
+eg: When system is idle, kernel is executing an "idle process" in process context in the kernel.
 
